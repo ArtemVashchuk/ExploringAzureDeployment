@@ -20,4 +20,9 @@ app.MapGet("/pasha", () =>
 })
 .WithName("GetWeatherForecast");
 
+app.MapGet("/test", () =>
+{
+    return "Hello World!!!";
+}).WithName("getHelloWorld");
+
 app.Run();
