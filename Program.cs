@@ -1,5 +1,9 @@
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
+
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
@@ -14,15 +18,18 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/pasha", () =>
+app.MapGet("/pasha", (ILogger<Program> logger) =>
 {
+    logger.LogInformation("Hello Pasha Siibiryak!!!");
     return "Hello Pasha Siibiryak!!!";
-})
-.WithName("GetWeatherForecast");
+});
+// .WithName("GetWeatherForecast");
 
-app.MapGet("/test", () =>
+app.MapGet("/test", (ILogger<Program> logger) =>
 {
+    logger.LogInformation("Hello World!!!");
     return "Hello World!!!";
-}).WithName("getHelloWorld");
+});
+    // .WithName("getHelloWorld");
 
 app.Run();
