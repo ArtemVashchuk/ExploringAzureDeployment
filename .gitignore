@@ -1,29 +1,10 @@
+#####################################
 # Rider IDE
+#####################################
 .idea/
 *.sln.iml
 *.DotSettings.user
 out/
-
-# User-specific files
-*.user
-*.userosscache
-*.suo
-*.userprefs
-
-# Build results
-bin/
-obj/
-[Rr]elease/
-[Dd]ebug/
-x64/
-x86/
-
-# NuGet packages
-*.nupkg
-packages/
-.nuget/
-project.lock.json
-project.fragment.lock.json
 
 # Rider caches
 .idea/.idea.*
@@ -33,17 +14,105 @@ project.fragment.lock.json
 .idea/libraries
 .idea/.name
 
-# Resharper / JetBrains caches
+#####################################
+# ReSharper / JetBrains
+#####################################
 _ReSharper*/
 *.DotSettings.user
 
+#####################################
+# User-specific files
+#####################################
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+#####################################
+# Build results
+#####################################
+bin/
+obj/
+[Rr]elease/
+[Dd]ebug/
+x64/
+x86/
+bld/
+[Bb]uild/
+
+#####################################
+# Publish output
+#####################################
+publish/
+*.Publish.xml
+*.pubxml
+*.pubxml.user
+
+#####################################
+# NuGet
+#####################################
+*.nupkg
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+#####################################
+# Test results
+#####################################
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+#####################################
+# Logs
+#####################################
+*.log
+logs/
+
+#####################################
+# Local app configuration (IMPORTANT)
+#####################################
+appsettings.Development.json
+appsettings.*.local.json
+secrets.json
+
+#####################################
+# Environment files
+#####################################
+.env
+.env.*
+
+#####################################
+# Azure / Deployment
+#####################################
+.azure/
+*.azurePubxml
+*.PublishSettings
+
+#####################################
+# Docker
+#####################################
+docker-compose.override.yml
+
+#####################################
 # OS files
+#####################################
 .DS_Store
 Thumbs.db
+ehthumbs.db
 
-# Logs
-*.log
-
-# Others
-*.vs/
+#####################################
+# VS / VS Code
+#####################################
+.vs/
 .vscode/
+
+#####################################
+# Misc
+#####################################
+*.tmp
+*.cache
+*.pid
