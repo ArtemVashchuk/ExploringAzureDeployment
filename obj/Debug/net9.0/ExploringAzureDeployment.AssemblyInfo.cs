@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExploringAzureDeployment")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49aed77ab4bf03792cf0815dc771923623d50e9e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d5e24a1cda2b57cb154b186f397320b3e130264")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExploringAzureDeployment")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExploringAzureDeployment")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
