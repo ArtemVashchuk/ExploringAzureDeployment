@@ -1,17 +1,49 @@
-node_modules
-dist
+# Rider IDE
+.idea/
+*.sln.iml
+*.DotSettings.user
+out/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Build results
+bin/
+obj/
+[Rr]elease/
+[Dd]ebug/
+x64/
+x86/
+
+# NuGet packages
+*.nupkg
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+
+# Rider caches
+.idea/.idea.*
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/libraries
+.idea/.name
+
+# Resharper / JetBrains caches
+_ReSharper*/
+*.DotSettings.user
+
+# OS files
 .DS_Store
-server/public
-vite.config.ts.*
-*.tar.gz
+Thumbs.db
 
-# Environment variables (contains secrets)
-.env
-.env.local
-.env.*.local
-*.env
+# Logs
+*.log
 
-# IDE
-.idea
-.agent
-.vscode
+# Others
+*.vs/
+.vscode/
